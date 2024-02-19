@@ -9,6 +9,11 @@ function showElementById(elementId){
     element.classList.remove('hidden');
 }
 
+function addBackgroundColor(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-orange-300');
+}
+
 function randomAlphabet(){
     //get Alphabet
     const text = 'abcdefghijklmnopqrstuvwxyz';

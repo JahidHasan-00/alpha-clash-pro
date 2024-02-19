@@ -12,7 +12,13 @@
 
 function gameContinue(){
     const alphabet = randomAlphabet();
-    console.log('Your alphabet is ', alphabet);
+
+    // set random alphabet to screen
+    const currentAlphabet = document.getElementById('current-alphabet');
+    currentAlphabet.innerText = alphabet;
+
+    // set background
+    addBackgroundColor(alphabet);
 }
 
 
